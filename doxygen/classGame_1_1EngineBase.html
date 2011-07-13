@@ -97,10 +97,11 @@ Inheritance diagram for Game::EngineBase:</div>
  <div class="center">
   <img src="classGame_1_1EngineBase.png" usemap="#Game::EngineBase_map" alt=""/>
   <map id="Game::EngineBase_map" name="Game::EngineBase_map">
-<area href="structGame_1_1IEngine.html" alt="Game::IEngine" shape="rect" coords="127,56,244,80"/>
-<area href="structCore_1_1IRenderable.html" alt="Core::IRenderable" shape="rect" coords="0,0,117,24"/>
-<area href="structCore_1_1IUpdateable.html" alt="Core::IUpdateable" shape="rect" coords="127,0,244,24"/>
-<area href="structCore_1_1ISerializable.html" alt="Core::ISerializable" shape="rect" coords="254,0,371,24"/>
+<area href="structGame_1_1IEngine.html" alt="Game::IEngine" shape="rect" coords="210,56,340,80"/>
+<area href="structCore_1_1IRenderable.html" alt="Core::IRenderable" shape="rect" coords="0,0,130,24"/>
+<area href="structCore_1_1IUpdateable.html" alt="Core::IUpdateable" shape="rect" coords="140,0,270,24"/>
+<area href="structCore_1_1ISerializable.html" alt="Core::ISerializable" shape="rect" coords="280,0,410,24"/>
+<area href="structEvent_1_1IEventListener.html" alt="Event::IEventListener" shape="rect" coords="420,0,550,24"/>
 </map>
  </div></div>
 
@@ -142,6 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">VIRTUAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1EngineBase_a492e19a552b21a8f9ffdd68e013a3a79.html#a492e19a552b21a8f9ffdd68e013a3a79">update</a> (TIME delta)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">VIRTUAL bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1EngineBase_a80bba546efdfc32dbeec1d07a849a28f.html#a80bba546efdfc32dbeec1d07a849a28f">serialize</a> (TinyXML::TiXmlElement &amp;node) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">VIRTUAL bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1EngineBase_acb1c42a3b6c5cf5e4651a69c46027f54.html#acb1c42a3b6c5cf5e4651a69c46027f54">deserialize</a> (TinyXML::TiXmlElement &amp;node)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">VIRTUAL bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1EngineBase_a17610ff9f8621c5bf14620db1f7b7958.html#a17610ff9f8621c5bf14620db1f7b7958">handleEvent</a> (const <a class="el" href="structEvent_1_1IEvent.html">Event::IEvent</a> &amp;event)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceEvent.html">Event</a> Handler.  <a href="#a17610ff9f8621c5bf14620db1f7b7958"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGame_1_1EngineBase.html">EngineBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1EngineBase_ad8c738c9a7040307dd106b448a2a1e55.html#ad8c738c9a7040307dd106b448a2a1e55">Instance</a> (void)</td></tr>
@@ -157,7 +160,7 @@ Static Public Member Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="namespaceGame.html">Game</a>      </li>
       <li class="navelem"><a class="el" href="classGame_1_1EngineBase.html">EngineBase</a>      </li>
-      <li class="footer">Generated on Tue Jul 12 2011 18:31:49 for Marshmallow Engine by&#160;
+      <li class="footer">Generated on Wed Jul 13 2011 09:04:07 for Marshmallow Engine by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </li>
     </ul>

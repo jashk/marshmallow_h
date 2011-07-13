@@ -114,61 +114,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00037"></a>00037 <span class="preprocessor">#ifndef GAME_IENGINE_H</span>
 <a name="l00038"></a>00038 <span class="preprocessor"></span><span class="preprocessor">#define GAME_IENGINE_H 1</span>
 <a name="l00039"></a>00039 <span class="preprocessor"></span>
-<a name="l00040"></a>00040 <span class="preprocessor">#include &quot;core/irenderable.h&quot;</span>
-<a name="l00041"></a>00041 <span class="preprocessor">#include &quot;core/iserializable.h&quot;</span>
-<a name="l00042"></a>00042 <span class="preprocessor">#include &quot;core/iupdateable.h&quot;</span>
-<a name="l00043"></a>00043 <span class="preprocessor">#include &quot;core/fd.h&quot;</span>
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045 <a class="code" href="global_8h_ae41423b855bedfd22725b36461ab3b6b.html#ae41423b855bedfd22725b36461ab3b6b">MARSHMALLOW_NAMESPACE_BEGIN</a>
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047 <span class="keyword">namespace </span>Event
-<a name="l00048"></a>00048 {
-<a name="l00049"></a>00049         <span class="keyword">class </span>EventManager;
-<a name="l00050"></a>00050         <span class="keyword">typedef</span> <a class="code" href="classCore_1_1Shared.html">Core::Shared&lt;EventManager&gt;</a> <a class="code" href="namespaceEvent_a19b3fb559b608d13d0288cff8bab0e54.html#a19b3fb559b608d13d0288cff8bab0e54">SharedEventManager</a>;
-<a name="l00051"></a>00051 }
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053 <span class="keyword">namespace </span>Game
-<a name="l00054"></a>00054 {
-<a name="l00055"></a>00055         <span class="keyword">class </span>SceneManager;
-<a name="l00056"></a>00056         <span class="keyword">typedef</span> <a class="code" href="classCore_1_1Shared.html">Core::Shared&lt;SceneManager&gt;</a> <a class="code" href="namespaceGame_a10a8fb84aa6b0fd1e952dd307fd1270e.html#a10a8fb84aa6b0fd1e952dd307fd1270e">SharedSceneManager</a>;
-<a name="l00057"></a>00057 
-<a name="l00058"></a>00058         <span class="keyword">struct </span>IFactory;
-<a name="l00059"></a>00059         <span class="keyword">typedef</span> <a class="code" href="classCore_1_1Shared.html">Core::Shared&lt;IFactory&gt;</a> <a class="code" href="namespaceGame_aa0e5bc75c1ee35a6cee6c474ba7e11c6.html#aa0e5bc75c1ee35a6cee6c474ba7e11c6">SharedFactory</a>;
-<a name="l00060"></a>00060 
-<a name="l00062"></a><a class="code" href="structGame_1_1IEngine.html">00062</a>         <span class="keyword">struct </span><a class="code" href="unix_2environment_8h_aca303a2a9552dd7a14288ad6ccff8d65.html#aca303a2a9552dd7a14288ad6ccff8d65">GAME_EXPORT</a> <a class="code" href="structGame_1_1IEngine.html" title="Game Engine Interface.">IEngine</a> : <span class="keyword">public</span> Core::IRenderable,
-<a name="l00063"></a>00063                                      <span class="keyword">public</span> Core::IUpdateable,
-<a name="l00064"></a>00064                                      <span class="keyword">public</span> Core::ISerializable
-<a name="l00065"></a>00065         {
-<a name="l00066"></a><a class="code" href="structGame_1_1IEngine_ad370ae47728e5ad9536018e2b578f246.html#ad370ae47728e5ad9536018e2b578f246">00066</a>                 <span class="keyword">virtual</span> <a class="code" href="structGame_1_1IEngine_ad370ae47728e5ad9536018e2b578f246.html#ad370ae47728e5ad9536018e2b578f246">~IEngine</a>(<span class="keywordtype">void</span>) {};
-<a name="l00067"></a>00067 
-<a name="l00071"></a>00071                 <span class="keyword">virtual</span> <span class="keywordtype">int</span> run(<span class="keywordtype">void</span>) = 0;
-<a name="l00072"></a>00072 
-<a name="l00077"></a>00077                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> stop(<span class="keywordtype">int</span> exit_code = 0) = 0;
-<a name="l00078"></a>00078 
-<a name="l00082"></a>00082                 <span class="keyword">virtual</span> <a class="code" href="classCore_1_1Shared.html">Event::SharedEventManager</a> eventManager(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
-<a name="l00083"></a>00083 
-<a name="l00087"></a>00087                 <span class="keyword">virtual</span> <a class="code" href="classCore_1_1Shared.html">SharedSceneManager</a> sceneManager(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
-<a name="l00088"></a>00088 
-<a name="l00092"></a>00092                 <span class="keyword">virtual</span> <a class="code" href="classCore_1_1Shared.html">SharedFactory</a> factory(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
-<a name="l00093"></a>00093 
-<a name="l00094"></a>00094                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initialize(<span class="keywordtype">void</span>) = 0;
-<a name="l00095"></a>00095                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> finalize(<span class="keywordtype">void</span>) = 0;
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> second(<span class="keywordtype">void</span>) = 0;
-<a name="l00098"></a>00098                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> tick(<a class="code" href="unix_2environment_8h_a078b6c12f1ac6819cecef90ab5870276.html#a078b6c12f1ac6819cecef90ab5870276">TIME</a> timeout) = 0;
-<a name="l00099"></a>00099         };
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101 }
+<a name="l00040"></a>00040 <span class="preprocessor">#include &quot;core/fd.h&quot;</span>
+<a name="l00041"></a>00041 <span class="preprocessor">#include &quot;core/irenderable.h&quot;</span>
+<a name="l00042"></a>00042 <span class="preprocessor">#include &quot;core/iserializable.h&quot;</span>
+<a name="l00043"></a>00043 <span class="preprocessor">#include &quot;core/iupdateable.h&quot;</span>
+<a name="l00044"></a>00044 <span class="preprocessor">#include &quot;event/ieventlistener.h&quot;</span>
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 <a class="code" href="global_8h_ae41423b855bedfd22725b36461ab3b6b.html#ae41423b855bedfd22725b36461ab3b6b">MARSHMALLOW_NAMESPACE_BEGIN</a>
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 <span class="keyword">namespace </span>Event
+<a name="l00049"></a>00049 {
+<a name="l00050"></a>00050         <span class="keyword">class </span>EventManager;
+<a name="l00051"></a>00051         <span class="keyword">typedef</span> <a class="code" href="classCore_1_1Shared.html">Core::Shared&lt;EventManager&gt;</a> <a class="code" href="namespaceEvent_a19b3fb559b608d13d0288cff8bab0e54.html#a19b3fb559b608d13d0288cff8bab0e54">SharedEventManager</a>;
+<a name="l00052"></a>00052 }
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="keyword">namespace </span>Game
+<a name="l00055"></a>00055 {
+<a name="l00056"></a>00056         <span class="keyword">class </span>SceneManager;
+<a name="l00057"></a>00057         <span class="keyword">typedef</span> <a class="code" href="classCore_1_1Shared.html">Core::Shared&lt;SceneManager&gt;</a> <a class="code" href="namespaceGame_a10a8fb84aa6b0fd1e952dd307fd1270e.html#a10a8fb84aa6b0fd1e952dd307fd1270e">SharedSceneManager</a>;
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059         <span class="keyword">struct </span>IFactory;
+<a name="l00060"></a>00060         <span class="keyword">typedef</span> <a class="code" href="classCore_1_1Shared.html">Core::Shared&lt;IFactory&gt;</a> <a class="code" href="namespaceGame_aa0e5bc75c1ee35a6cee6c474ba7e11c6.html#aa0e5bc75c1ee35a6cee6c474ba7e11c6">SharedFactory</a>;
+<a name="l00061"></a>00061 
+<a name="l00063"></a><a class="code" href="structGame_1_1IEngine.html">00063</a>         <span class="keyword">struct </span><a class="code" href="unix_2environment_8h_aca303a2a9552dd7a14288ad6ccff8d65.html#aca303a2a9552dd7a14288ad6ccff8d65">GAME_EXPORT</a> <a class="code" href="structGame_1_1IEngine.html" title="Game Engine Interface.">IEngine</a> : <span class="keyword">public</span> Core::IRenderable,
+<a name="l00064"></a>00064                                      <span class="keyword">public</span> Core::IUpdateable,
+<a name="l00065"></a>00065                                      <span class="keyword">public</span> Core::ISerializable,
+<a name="l00066"></a>00066                                      <span class="keyword">public</span> Event::IEventListener
+<a name="l00067"></a>00067         {
+<a name="l00068"></a><a class="code" href="structGame_1_1IEngine_ad370ae47728e5ad9536018e2b578f246.html#ad370ae47728e5ad9536018e2b578f246">00068</a>                 <span class="keyword">virtual</span> <a class="code" href="structGame_1_1IEngine_ad370ae47728e5ad9536018e2b578f246.html#ad370ae47728e5ad9536018e2b578f246">~IEngine</a>(<span class="keywordtype">void</span>) {};
+<a name="l00069"></a>00069 
+<a name="l00073"></a>00073                 <span class="keyword">virtual</span> <span class="keywordtype">int</span> run(<span class="keywordtype">void</span>) = 0;
+<a name="l00074"></a>00074 
+<a name="l00079"></a>00079                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> stop(<span class="keywordtype">int</span> exit_code = 0) = 0;
+<a name="l00080"></a>00080 
+<a name="l00084"></a>00084                 <span class="keyword">virtual</span> <a class="code" href="classCore_1_1Shared.html">Event::SharedEventManager</a> eventManager(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
+<a name="l00085"></a>00085 
+<a name="l00089"></a>00089                 <span class="keyword">virtual</span> <a class="code" href="classCore_1_1Shared.html">SharedSceneManager</a> sceneManager(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
+<a name="l00090"></a>00090 
+<a name="l00094"></a>00094                 <span class="keyword">virtual</span> <a class="code" href="classCore_1_1Shared.html">SharedFactory</a> factory(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096                 <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initialize(<span class="keywordtype">void</span>) = 0;
+<a name="l00097"></a>00097                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> finalize(<span class="keywordtype">void</span>) = 0;
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> second(<span class="keywordtype">void</span>) = 0;
+<a name="l00100"></a>00100                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> tick(<a class="code" href="unix_2environment_8h_a078b6c12f1ac6819cecef90ab5870276.html#a078b6c12f1ac6819cecef90ab5870276">TIME</a> timeout) = 0;
+<a name="l00101"></a>00101         };
 <a name="l00102"></a>00102 
-<a name="l00103"></a>00103 <a class="code" href="global_8h_a731166dd360f5c70493f1b6d512b2d23.html#a731166dd360f5c70493f1b6d512b2d23">MARSHMALLOW_NAMESPACE_END</a>
+<a name="l00103"></a>00103 }
 <a name="l00104"></a>00104 
-<a name="l00105"></a>00105 <span class="preprocessor">#endif</span>
+<a name="l00105"></a>00105 <a class="code" href="global_8h_a731166dd360f5c70493f1b6d512b2d23.html#a731166dd360f5c70493f1b6d512b2d23">MARSHMALLOW_NAMESPACE_END</a>
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="iengine_8h.html">iengine.h</a>      </li>
-      <li class="footer">Generated on Tue Jul 12 2011 18:31:49 for Marshmallow Engine by&#160;
+      <li class="footer">Generated on Wed Jul 13 2011 09:04:06 for Marshmallow Engine by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </li>
     </ul>

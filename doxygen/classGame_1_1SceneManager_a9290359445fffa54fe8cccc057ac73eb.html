@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Marshmallow Engine: Event::RenderEventListener::~RenderEventListener</title>
+<title>Marshmallow Engine: Game::SceneManager::handleEvent</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -67,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('classEvent_1_1RenderEventListener.html','');
+  initNavTree('classGame_1_1SceneManager.html','');
 </script>
 <div id="doc-content">
 <div class="contents">
@@ -76,27 +76,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
    <td valign="top">
       <div class="navtab">
         <table>
-          <tr><td class="navtab"><a class="qindex" href="classEvent_1_1RenderEventListener_ad4c545c5af9a5414d65a3be1f1d11d2c.html#ad4c545c5af9a5414d65a3be1f1d11d2c">handleEvent</a></td></tr>
-          <tr><td class="navtab"><a class="qindex" href="classEvent_1_1RenderEventListener_aa0cea98a2f0acdfe1c14a1967aba3e96.html#aa0cea98a2f0acdfe1c14a1967aba3e96">RenderEventListener</a></td></tr>
-          <tr><td class="navtab"><a class="qindexHL" href="classEvent_1_1RenderEventListener_a0a79428c7fd9459ada36a50df5bdf061.html#a0a79428c7fd9459ada36a50df5bdf061">~RenderEventListener</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classGame_1_1SceneManager_a62d63a5e47200a616d5ed903a98c87dc.html#a62d63a5e47200a616d5ed903a98c87dc">activeScene</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classGame_1_1SceneManager_a45970fb8f5c6f08f965259fe8748cf38.html#a45970fb8f5c6f08f965259fe8748cf38">deserialize</a></td></tr>
+          <tr><td class="navtab"><a class="qindexHL" href="classGame_1_1SceneManager_a9290359445fffa54fe8cccc057ac73eb.html#a9290359445fffa54fe8cccc057ac73eb">handleEvent</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classGame_1_1SceneManager_a7766cff567a9ba2b843aa50e15c7b42d.html#a7766cff567a9ba2b843aa50e15c7b42d">popScene</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classGame_1_1SceneManager_add4fa4c4a5c163ba587a2f7233ecce38.html#add4fa4c4a5c163ba587a2f7233ecce38">pushScene</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classGame_1_1SceneManager_a64c02ad773b57568b43bcda3a43f5a01.html#a64c02ad773b57568b43bcda3a43f5a01">render</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classGame_1_1SceneManager_aa851fe1b0388f7676df0d1dbe40236b9.html#aa851fe1b0388f7676df0d1dbe40236b9">SceneManager</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classGame_1_1SceneManager_a01967ba63ec4a2c0bd91dbb8aea83ba8.html#a01967ba63ec4a2c0bd91dbb8aea83ba8">serialize</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classGame_1_1SceneManager_a27ebdc489c94149bf36f9149e1364f94.html#a27ebdc489c94149bf36f9149e1364f94">update</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classGame_1_1SceneManager_a5d04e9074e1b94b24e74d52379db9d49.html#a5d04e9074e1b94b24e74d52379db9d49">~SceneManager</a></td></tr>
         </table>
       </div>
    </td>
    <td valign="top">
-<a class="anchor" id="a0a79428c7fd9459ada36a50df5bdf061"></a><!-- doxytag: member="Event::RenderEventListener::~RenderEventListener" ref="a0a79428c7fd9459ada36a50df5bdf061" args="(void)" -->
+<a class="anchor" id="a9290359445fffa54fe8cccc057ac73eb"></a><!-- doxytag: member="Game::SceneManager::handleEvent" ref="a9290359445fffa54fe8cccc057ac73eb" args="(const Event::IEvent &amp;event)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Event::RenderEventListener::~RenderEventListener </td>
+          <td class="memname">VIRTUAL bool Game::SceneManager::handleEvent </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structEvent_1_1IEvent.html">Event::IEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
           <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p><a class="el" href="namespaceEvent.html">Event</a> Handler. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td><a class="el" href="namespaceEvent.html">Event</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="structEvent_1_1IEventListener_a5cfc9729ecb4ff16b074c1cfbb7357f4.html#a5cfc9729ecb4ff16b074c1cfbb7357f4">Event::IEventListener</a>.</p>
 
 </div>
 </div>
@@ -107,9 +124,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="namespaceEvent.html">Event</a>      </li>
-      <li class="navelem"><a class="el" href="classEvent_1_1RenderEventListener.html">RenderEventListener</a>      </li>
-      <li class="footer">Generated on Tue Jul 12 2011 18:31:49 for Marshmallow Engine by&#160;
+      <li class="navelem"><a class="el" href="namespaceGame.html">Game</a>      </li>
+      <li class="navelem"><a class="el" href="classGame_1_1SceneManager.html">SceneManager</a>      </li>
+      <li class="footer">Generated on Wed Jul 13 2011 09:04:07 for Marshmallow Engine by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </li>
     </ul>

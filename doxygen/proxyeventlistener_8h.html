@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Marshmallow Engine: Event::UpdateEventListener Class Reference</title>
+<title>Marshmallow Engine: src/event/proxyeventlistener.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -36,8 +36,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li id="searchli">
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -58,10 +58,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -75,52 +73,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('classEvent_1_1UpdateEventListener.html','');
+  initNavTree('proxyeventlistener_8h.html','');
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<h1>Event::UpdateEventListener Class Reference</h1>  </div>
+<h1>src/event/proxyeventlistener.h File Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="Event::UpdateEventListener" --><!-- doxytag: inherits="Event::IEventListener" -->
-<p>Update <a class="el" href="namespaceEvent.html">Event</a> Listener Class.  
-<a href="#_details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="updateeventlistener_8h_source.html">updateeventlistener.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Event::UpdateEventListener:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classEvent_1_1UpdateEventListener.png" usemap="#Event::UpdateEventListener_map" alt=""/>
-  <map id="Event::UpdateEventListener_map" name="Event::UpdateEventListener_map">
-<area href="structEvent_1_1IEventListener.html" alt="Event::IEventListener" shape="rect" coords="0,0,166,24"/>
-</map>
- </div></div>
-
-<p><a href="classEvent_1_1UpdateEventListener-members.html">List of all members.</a></p>
+<div class="textblock"><code>#include &quot;event/ieventlistener.h&quot;</code><br/>
+</div>
+<p><a href="proxyeventlistener_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent_1_1UpdateEventListener_ae4230071d70d3915afe9039045985e31.html#ae4230071d70d3915afe9039045985e31">UpdateEventListener</a> (<a class="el" href="structCore_1_1IUpdateable.html">Core::IUpdateable</a> &amp;owner)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent_1_1UpdateEventListener_a17848759a59a9e6b4065d073d45c6f80.html#a17848759a59a9e6b4065d073d45c6f80">~UpdateEventListener</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">VIRTUAL bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent_1_1UpdateEventListener_a6fc94360ff7b0190f69f501e1f56b466.html#a6fc94360ff7b0190f69f501e1f56b466">handleEvent</a> (const <a class="el" href="structEvent_1_1IEvent.html">IEvent</a> &amp;event)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceEvent.html">Event</a> Handler.  <a href="#a6fc94360ff7b0190f69f501e1f56b466"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent_1_1ProxyEventListener.html">Event::ProxyEventListener</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Proxy <a class="el" href="namespaceEvent.html">Event</a> Listener Class.  <a href="classEvent_1_1ProxyEventListener.html#_details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceEvent.html">Event</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Update <a class="el" href="namespaceEvent.html">Event</a> Listener Class. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/event/<a class="el" href="updateeventlistener_8h_source.html">updateeventlistener.h</a></li>
-</ul>
-</div>
+<div class="textblock"><dl class="author"><dt><b>Author:</b></dt><dd>Guillermo A. Amaral B. (gamaral) &lt;<a href="mailto:g@maral.me">g@maral.me</a>&gt; </dd></dl>
+</div></div>
 </div>
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="namespaceEvent.html">Event</a>      </li>
-      <li class="navelem"><a class="el" href="classEvent_1_1UpdateEventListener.html">UpdateEventListener</a>      </li>
-      <li class="footer">Generated on Tue Jul 12 2011 18:31:49 for Marshmallow Engine by&#160;
+      <li class="navelem"><a class="el" href="proxyeventlistener_8h.html">proxyeventlistener.h</a>      </li>
+      <li class="footer">Generated on Wed Jul 13 2011 09:04:06 for Marshmallow Engine by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </li>
     </ul>

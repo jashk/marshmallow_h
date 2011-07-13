@@ -88,6 +88,7 @@ This is the complete list of members for <a class="el" href="structGame_1_1IEngi
   <tr class="memlist"><td><a class="el" href="structGame_1_1IEngine_ac5bc3866d4db02580b0d37d85a822428.html#ac5bc3866d4db02580b0d37d85a822428">eventManager</a>(void) const =0</td><td><a class="el" href="structGame_1_1IEngine.html">Game::IEngine</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structGame_1_1IEngine_a4df290bada6c9875beab4d03a20d681c.html#a4df290bada6c9875beab4d03a20d681c">factory</a>(void) const =0</td><td><a class="el" href="structGame_1_1IEngine.html">Game::IEngine</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structGame_1_1IEngine_af9eae9f8206189fa7cf766ba5e22b51a.html#af9eae9f8206189fa7cf766ba5e22b51a">finalize</a>(void)=0</td><td><a class="el" href="structGame_1_1IEngine.html">Game::IEngine</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="structEvent_1_1IEventListener_a5cfc9729ecb4ff16b074c1cfbb7357f4.html#a5cfc9729ecb4ff16b074c1cfbb7357f4">handleEvent</a>(const IEvent &amp;event)=0</td><td><a class="el" href="structEvent_1_1IEventListener.html">Event::IEventListener</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structGame_1_1IEngine_aa7a1c4ca605bb5ad8331b6ad5c1120c7.html#aa7a1c4ca605bb5ad8331b6ad5c1120c7">initialize</a>(void)=0</td><td><a class="el" href="structGame_1_1IEngine.html">Game::IEngine</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structCore_1_1IRenderable_aac640527cfeca37b30de0dd7653877bd.html#aac640527cfeca37b30de0dd7653877bd">render</a>(void)=0</td><td><a class="el" href="structCore_1_1IRenderable.html">Core::IRenderable</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structGame_1_1IEngine_ac321c4fd9ff5965426b8ae667abb33ee.html#ac321c4fd9ff5965426b8ae667abb33ee">run</a>(void)=0</td><td><a class="el" href="structGame_1_1IEngine.html">Game::IEngine</a></td><td><code> [pure virtual]</code></td></tr>
@@ -98,6 +99,7 @@ This is the complete list of members for <a class="el" href="structGame_1_1IEngi
   <tr class="memlist"><td><a class="el" href="structGame_1_1IEngine_a6d2f48cac7fa61612a764254a0c6b6b2.html#a6d2f48cac7fa61612a764254a0c6b6b2">tick</a>(TIME timeout)=0</td><td><a class="el" href="structGame_1_1IEngine.html">Game::IEngine</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structCore_1_1IUpdateable_a63656600cfba3aab8766bfe9c18a4665.html#a63656600cfba3aab8766bfe9c18a4665">update</a>(TIME delta)=0</td><td><a class="el" href="structCore_1_1IUpdateable.html">Core::IUpdateable</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structGame_1_1IEngine_ad370ae47728e5ad9536018e2b578f246.html#ad370ae47728e5ad9536018e2b578f246">~IEngine</a>(void)</td><td><a class="el" href="structGame_1_1IEngine.html">Game::IEngine</a></td><td><code> [inline, virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="structEvent_1_1IEventListener_ab98b1b3fa29f8e4a99120b9137977996.html#ab98b1b3fa29f8e4a99120b9137977996">~IEventListener</a>(void)</td><td><a class="el" href="structEvent_1_1IEventListener.html">Event::IEventListener</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structCore_1_1IRenderable_ab5d846681dee45901a319461b1b9992f.html#ab5d846681dee45901a319461b1b9992f">~IRenderable</a>(void)</td><td><a class="el" href="structCore_1_1IRenderable.html">Core::IRenderable</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structCore_1_1ISerializable_aeebdd31c00ded24f4e4f8ddd00d3e5b6.html#aeebdd31c00ded24f4e4f8ddd00d3e5b6">~ISerializable</a>(void)</td><td><a class="el" href="structCore_1_1ISerializable.html">Core::ISerializable</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="structCore_1_1IUpdateable_a5877c0b8358f8756dfbfeda382df5a25.html#a5877c0b8358f8756dfbfeda382df5a25">~IUpdateable</a>(void)</td><td><a class="el" href="structCore_1_1IUpdateable.html">Core::IUpdateable</a></td><td><code> [inline, virtual]</code></td></tr>
@@ -105,7 +107,7 @@ This is the complete list of members for <a class="el" href="structGame_1_1IEngi
 </div>
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="footer">Generated on Tue Jul 12 2011 18:31:50 for Marshmallow Engine by&#160;
+      <li class="footer">Generated on Wed Jul 13 2011 09:04:07 for Marshmallow Engine by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </li>
     </ul>

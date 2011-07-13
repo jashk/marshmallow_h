@@ -8,7 +8,6 @@ var NAVTREE =
       [ "Game::ComponentBase", "classGame_1_1ComponentBase.html", null ],
       [ "Event::DebugEventListener", "classEvent_1_1DebugEventListener.html", null ],
       [ "Game::EngineBase", "classGame_1_1EngineBase.html", null ],
-      [ "Game::EngineEventListener", "classGame_1_1EngineEventListener.html", null ],
       [ "Game::Entity", "classGame_1_1Entity.html", null ],
       [ "Game::EntityBase", "classGame_1_1EntityBase.html", null ],
       [ "Game::EntitySceneLayer", "classGame_1_1EntitySceneLayer.html", null ],
@@ -42,12 +41,12 @@ var NAVTREE =
       [ "Math::Point3", "classMath_1_1Point3.html", null ],
       [ "Math::Polygon2", "classMath_1_1Polygon2.html", null ],
       [ "Game::PositionComponent", "classGame_1_1PositionComponent.html", null ],
+      [ "Event::ProxyEventListener", "classEvent_1_1ProxyEventListener.html", null ],
       [ "Graphics::QuadMesh", "classGraphics_1_1QuadMesh.html", null ],
       [ "Event::QuitEvent", "classEvent_1_1QuitEvent.html", null ],
       [ "Math::Rect2", "classMath_1_1Rect2.html", null ],
       [ "Game::RenderComponent", "classGame_1_1RenderComponent.html", null ],
       [ "Event::RenderEvent", "classEvent_1_1RenderEvent.html", null ],
-      [ "Event::RenderEventListener", "classEvent_1_1RenderEventListener.html", null ],
       [ "Game::Scene", "classGame_1_1Scene.html", null ],
       [ "Game::SceneBase", "classGame_1_1SceneBase.html", null ],
       [ "Game::SceneLayerBase", "classGame_1_1SceneLayerBase.html", null ],
@@ -64,11 +63,10 @@ var NAVTREE =
       [ "Graphics::OpenGL::TextureData", "classGraphics_1_1OpenGL_1_1TextureData.html", null ],
       [ "TimeData", "structTimeData.html", null ],
       [ "Event::UpdateEvent", "classEvent_1_1UpdateEvent.html", null ],
-      [ "Event::UpdateEventListener", "classEvent_1_1UpdateEventListener.html", null ],
       [ "Math::Vector2", "classMath_1_1Vector2.html", null ],
       [ "Math::Vector3", "classMath_1_1Vector3.html", null ],
-      [ "Graphics::OpenGL::VertexData", "classGraphics_1_1OpenGL_1_1VertexData.html", null ],
       [ "Graphics::Dummy::VertexData", "classGraphics_1_1Dummy_1_1VertexData.html", null ],
+      [ "Graphics::OpenGL::VertexData", "classGraphics_1_1OpenGL_1_1VertexData.html", null ],
       [ "Graphics::Viewport", "structGraphics_1_1Viewport.html", null ],
       [ "Core::Weak< T >", "classCore_1_1Weak.html", null ]
     ] ],
@@ -103,9 +101,12 @@ var NAVTREE =
       ] ],
       [ "Event::IEventListener", "structEvent_1_1IEventListener.html", [
         [ "Event::DebugEventListener", "classEvent_1_1DebugEventListener.html", null ],
-        [ "Event::RenderEventListener", "classEvent_1_1RenderEventListener.html", null ],
-        [ "Event::UpdateEventListener", "classEvent_1_1UpdateEventListener.html", null ],
-        [ "Game::EngineEventListener", "classGame_1_1EngineEventListener.html", null ]
+        [ "Event::ProxyEventListener", "classEvent_1_1ProxyEventListener.html", null ],
+        [ "Game::IEngine", "structGame_1_1IEngine.html", [
+          [ "Game::EngineBase", "classGame_1_1EngineBase.html", null ]
+        ] ],
+        [ "Game::SceneManager", "classGame_1_1SceneManager.html", null ],
+        [ "Game::SplashSceneLayer", "classGame_1_1SplashSceneLayer.html", null ]
       ] ],
       [ "Game::IFactory", "structGame_1_1IFactory.html", [
         [ "Game::FactoryBase", "classGame_1_1FactoryBase.html", null ]
@@ -119,9 +120,7 @@ var NAVTREE =
             [ "Game::RenderComponent", "classGame_1_1RenderComponent.html", null ]
           ] ]
         ] ],
-        [ "Game::IEngine", "structGame_1_1IEngine.html", [
-          [ "Game::EngineBase", "classGame_1_1EngineBase.html", null ]
-        ] ],
+        [ "Game::IEngine", "structGame_1_1IEngine.html", null ],
         [ "Game::IEntity", "structGame_1_1IEntity.html", [
           [ "Game::EntityBase", "classGame_1_1EntityBase.html", [
             [ "Game::Entity", "classGame_1_1Entity.html", null ]
@@ -215,15 +214,13 @@ var NAVTREE =
       [ "src/event/ievent.h", "ievent_8h.html", null ],
       [ "src/event/ieventlistener.h", "ieventlistener_8h.html", null ],
       [ "src/event/keyboardevent.h", "keyboardevent_8h.html", null ],
+      [ "src/event/proxyeventlistener.h", "proxyeventlistener_8h.html", null ],
       [ "src/event/quitevent.h", "quitevent_8h.html", null ],
       [ "src/event/renderevent.h", "renderevent_8h.html", null ],
-      [ "src/event/rendereventlistener.h", "rendereventlistener_8h.html", null ],
       [ "src/event/updateevent.h", "updateevent_8h.html", null ],
-      [ "src/event/updateeventlistener.h", "updateeventlistener_8h.html", null ],
       [ "src/game/componentbase.h", "componentbase_8h.html", null ],
       [ "src/game/engine.h", "engine_8h.html", null ],
       [ "src/game/enginebase.h", "enginebase_8h.html", null ],
-      [ "src/game/engineeventlistener.h", "engineeventlistener_8h.html", null ],
       [ "src/game/entity.h", "entity_8h.html", null ],
       [ "src/game/entitybase.h", "entitybase_8h.html", null ],
       [ "src/game/entityscenelayer.h", "entityscenelayer_8h.html", null ],

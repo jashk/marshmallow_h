@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>Game::SplashSceneLayer Class Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="Game::SplashSceneLayer" --><!-- doxytag: inherits="Game::SceneLayerBase" -->
+<!-- doxytag: class="Game::SplashSceneLayer" --><!-- doxytag: inherits="Game::SceneLayerBase,Event::IEventListener" -->
 <p><a class="el" href="namespaceGame.html">Game</a> Splash <a class="el" href="classGame_1_1Scene.html" title="Game No Frills Scene Class.">Scene</a> Layer Class.  
 <a href="#_details">More...</a></p>
 
@@ -99,6 +99,7 @@ Inheritance diagram for Game::SplashSceneLayer:</div>
   <img src="classGame_1_1SplashSceneLayer.png" usemap="#Game::SplashSceneLayer_map" alt=""/>
   <map id="Game::SplashSceneLayer_map" name="Game::SplashSceneLayer_map">
 <area href="classGame_1_1SceneLayerBase.html" alt="Game::SceneLayerBase" shape="rect" coords="167,112,324,136"/>
+<area href="structEvent_1_1IEventListener.html" alt="Event::IEventListener" shape="rect" coords="334,112,491,136"/>
 <area href="structGame_1_1ISceneLayer.html" alt="Game::ISceneLayer" shape="rect" coords="167,56,324,80"/>
 <area href="structCore_1_1IRenderable.html" alt="Core::IRenderable" shape="rect" coords="0,0,157,24"/>
 <area href="structCore_1_1IUpdateable.html" alt="Core::IUpdateable" shape="rect" coords="167,0,324,24"/>
@@ -120,12 +121,14 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_ab7a9a01f37b82c943c1129031990093e.html#ab7a9a01f37b82c943c1129031990093e">autoKill</a> (void) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_a91db79ae0cd94bbf3766e0d85e10f0cb.html#a91db79ae0cd94bbf3766e0d85e10f0cb">setAutoKill</a> (bool ak)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_adfda2873cc7a9dc5d2c86914b04eb456.html#adfda2873cc7a9dc5d2c86914b04eb456">reset</a> (void)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_aa34aebc828ca683a6c504e5e264ec98d.html#aa34aebc828ca683a6c504e5e264ec98d">skip</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_a68b45910687bf0275b019f4f39fd57fb.html#a68b45910687bf0275b019f4f39fd57fb">skip</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">VIRTUAL const <a class="el" href="classCore_1_1StrHash.html">Core::Type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_aeb4aaff6a51dfcaf10e4ee484771d92c.html#aeb4aaff6a51dfcaf10e4ee484771d92c">type</a> (void) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">VIRTUAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_aca9a56ef38aebe5e8ddaccb01a207afb.html#aca9a56ef38aebe5e8ddaccb01a207afb">render</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">VIRTUAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_a68d221b8d16b67f36b7b04984f02a957.html#a68d221b8d16b67f36b7b04984f02a957">update</a> (TIME delta)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">VIRTUAL bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_a83118738baf7d23b839ca4c376167a61.html#a83118738baf7d23b839ca4c376167a61">serialize</a> (TinyXML::TiXmlElement &amp;node) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">VIRTUAL bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_a413abbbdfd73bbea59f242096b41ecb3.html#a413abbbdfd73bbea59f242096b41ecb3">deserialize</a> (TinyXML::TiXmlElement &amp;node)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">VIRTUAL bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_a5ca4f02280900813ae423dbbb492cb1e.html#a5ca4f02280900813ae423dbbb492cb1e">handleEvent</a> (const <a class="el" href="structEvent_1_1IEvent.html">Event::IEvent</a> &amp;event)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceEvent.html">Event</a> Handler.  <a href="#a5ca4f02280900813ae423dbbb492cb1e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classCore_1_1StrHash.html">Core::Type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1SplashSceneLayer_ab2ef818ebfebdfee61211ecac51b0999.html#ab2ef818ebfebdfee61211ecac51b0999">Type</a> (void)</td></tr>
@@ -144,7 +147,7 @@ Protected Member Functions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="namespaceGame.html">Game</a>      </li>
       <li class="navelem"><a class="el" href="classGame_1_1SplashSceneLayer.html">SplashSceneLayer</a>      </li>
-      <li class="footer">Generated on Tue Jul 12 2011 18:31:50 for Marshmallow Engine by&#160;
+      <li class="footer">Generated on Wed Jul 13 2011 09:04:07 for Marshmallow Engine by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </li>
     </ul>
