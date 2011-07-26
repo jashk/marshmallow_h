@@ -129,50 +129,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00053"></a>00053 
 <a name="l00055"></a>00055                 <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a>(<span class="keywordtype">void</span>);
 <a name="l00056"></a>00056 
-<a name="l00062"></a>00062                 <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *d, <span class="keywordtype">size_t</span> length, <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> mask);
-<a name="l00063"></a>00063 
-<a name="l00068"></a>00068                 <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a>(<span class="keyword">const</span> <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a> &amp;copy);
-<a name="l00069"></a>00069                 <span class="keyword">virtual</span> ~<a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a>(<span class="keywordtype">void</span>);
-<a name="l00070"></a>00070 
-<a name="l00072"></a><a class="code" href="classCore_1_1Hash_adf1854990de6ba4798fb92498b20cae6.html#adf1854990de6ba4798fb92498b20cae6">00072</a>                 <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> result(<span class="keywordtype">void</span>)<span class="keyword"> const</span>
-<a name="l00073"></a>00073 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result); }
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075         <span class="keyword">public</span>: <span class="comment">/* operator */</span>
-<a name="l00076"></a>00076 
-<a name="l00077"></a><a class="code" href="classCore_1_1Hash_a659af6d56400ddf9d1cf99a2a09913e0.html#a659af6d56400ddf9d1cf99a2a09913e0">00077</a>                 operator UID()<span class="keyword"> const</span>
-<a name="l00078"></a>00078 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result); }
-<a name="l00079"></a>00079 
-<a name="l00080"></a>00080                 Marshmallow::Core::Hash &amp; operator=(<span class="keyword">const</span> Marshmallow::Core::Hash &amp;rhs);
-<a name="l00081"></a>00081 
-<a name="l00082"></a><a class="code" href="classCore_1_1Hash_a7b1aca1835a322966f4b4991963c080d.html#a7b1aca1835a322966f4b4991963c080d">00082</a>                 <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a> &amp;rhs)<span class="keyword"> const</span>
-<a name="l00083"></a>00083 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result == rhs.m_result); }
-<a name="l00084"></a>00084 
-<a name="l00085"></a><a class="code" href="classCore_1_1Hash_a0832a2af5e4a907f3ffbb7dbdeb4815c.html#a0832a2af5e4a907f3ffbb7dbdeb4815c">00085</a>                 <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a> &amp;rhs)<span class="keyword"> const</span>
-<a name="l00086"></a>00086 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result != rhs.m_result); }
-<a name="l00087"></a>00087 
-<a name="l00088"></a><a class="code" href="classCore_1_1Hash_af693e3e50b81e3d664eb4e9b26ba859b.html#af693e3e50b81e3d664eb4e9b26ba859b">00088</a>                 <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a> &amp;rhs)<span class="keyword"> const</span>
-<a name="l00089"></a>00089 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result &lt; rhs.m_result); }
-<a name="l00090"></a>00090 
-<a name="l00091"></a>00091         <span class="keyword">public</span>: <span class="comment">/* static */</span>
-<a name="l00092"></a>00092 
-<a name="l00094"></a>00094                 <span class="keyword">static</span> <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> Algorithm(<span class="keyword">const</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">size_t</span> length, <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> mask);
-<a name="l00095"></a>00095 
-<a name="l00096"></a>00096         <span class="keyword">protected</span>:
-<a name="l00097"></a>00097 
-<a name="l00098"></a>00098                 <span class="keywordtype">void</span> rehash(<span class="keyword">const</span> <span class="keywordtype">char</span> *d, <span class="keywordtype">size_t</span> length, <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> mask);
-<a name="l00099"></a>00099         };
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101 }
-<a name="l00102"></a>00102 
-<a name="l00103"></a>00103 <a class="code" href="global_8h_a731166dd360f5c70493f1b6d512b2d23.html#a731166dd360f5c70493f1b6d512b2d23">MARSHMALLOW_NAMESPACE_END</a>
-<a name="l00104"></a>00104 
-<a name="l00105"></a>00105 <span class="preprocessor">#endif</span>
+<a name="l00063"></a>00063                 <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *d, <span class="keywordtype">size_t</span> length, <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> mask);
+<a name="l00064"></a>00064 
+<a name="l00069"></a>00069                 <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a>(<span class="keyword">const</span> <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a> &amp;copy);
+<a name="l00070"></a>00070                 <span class="keyword">virtual</span> ~<a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a>(<span class="keywordtype">void</span>);
+<a name="l00071"></a>00071 
+<a name="l00073"></a><a class="code" href="classCore_1_1Hash_adf1854990de6ba4798fb92498b20cae6.html#adf1854990de6ba4798fb92498b20cae6">00073</a>                 <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> result(<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00074"></a>00074 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result); }
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076         <span class="keyword">public</span>: <span class="comment">/* operator */</span>
+<a name="l00077"></a>00077 
+<a name="l00078"></a><a class="code" href="classCore_1_1Hash_a659af6d56400ddf9d1cf99a2a09913e0.html#a659af6d56400ddf9d1cf99a2a09913e0">00078</a>                 operator UID()<span class="keyword"> const</span>
+<a name="l00079"></a>00079 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result); }
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081                 Marshmallow::Core::Hash &amp; operator=(<span class="keyword">const</span> Marshmallow::Core::Hash &amp;rhs);
+<a name="l00082"></a>00082 
+<a name="l00083"></a><a class="code" href="classCore_1_1Hash_a7b1aca1835a322966f4b4991963c080d.html#a7b1aca1835a322966f4b4991963c080d">00083</a>                 <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a> &amp;rhs)<span class="keyword"> const</span>
+<a name="l00084"></a>00084 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result == rhs.m_result); }
+<a name="l00085"></a>00085 
+<a name="l00086"></a><a class="code" href="classCore_1_1Hash_a0832a2af5e4a907f3ffbb7dbdeb4815c.html#a0832a2af5e4a907f3ffbb7dbdeb4815c">00086</a>                 <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a> &amp;rhs)<span class="keyword"> const</span>
+<a name="l00087"></a>00087 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result != rhs.m_result); }
+<a name="l00088"></a>00088 
+<a name="l00089"></a><a class="code" href="classCore_1_1Hash_af693e3e50b81e3d664eb4e9b26ba859b.html#af693e3e50b81e3d664eb4e9b26ba859b">00089</a>                 <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="classCore_1_1Hash.html" title="Hash Class.">Hash</a> &amp;rhs)<span class="keyword"> const</span>
+<a name="l00090"></a>00090 <span class="keyword">                    </span>{ <span class="keywordflow">return</span>(m_result &lt; rhs.m_result); }
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092         <span class="keyword">public</span>: <span class="comment">/* static */</span>
+<a name="l00093"></a>00093 
+<a name="l00095"></a>00095                 <span class="keyword">static</span> <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> Algorithm(<span class="keyword">const</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">size_t</span> length, <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> mask);
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097         <span class="keyword">protected</span>:
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099                 <span class="keywordtype">void</span> rehash(<span class="keyword">const</span> <span class="keywordtype">char</span> *d, <span class="keywordtype">size_t</span> length, <a class="code" href="unix_2environment_8h_aeb5b8a9664c45b817bf00533e8e487f0.html#aeb5b8a9664c45b817bf00533e8e487f0">UID</a> mask);
+<a name="l00100"></a>00100         };
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 }
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 <a class="code" href="global_8h_a731166dd360f5c70493f1b6d512b2d23.html#a731166dd360f5c70493f1b6d512b2d23">MARSHMALLOW_NAMESPACE_END</a>
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="hash_8h.html">hash.h</a>      </li>
-      <li class="footer">Generated on Wed Jul 13 2011 09:04:06 for Marshmallow Engine by&#160;
+      <li class="footer">Generated on Mon Jul 25 2011 19:09:59 for Marshmallow Engine by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </li>
     </ul>
